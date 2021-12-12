@@ -1,0 +1,11 @@
+﻿@model AboutViewModel
+
+<h2>About us page</h2>
+
+<div class="text-center">
+    <h1>About us page</h1>
+    <p>This is the story of the author: @Model.Name</p>
+    @await Html.PartialAsync("_MarketingBanner", Model) 
+</div>
+
+@await Component.InvokeAsync("BlogList") 
